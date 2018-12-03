@@ -17,29 +17,29 @@ Developer, SRE, Ops, DBA of Lijiababy.com.cn
   Business Keywords: Reporting, Member, Product, Trade, Promotion, Coupon, Finance, eInvoice, ERP(SAP), Warehouse, Logistics, Notification, After service, Refund, JD, Tmall, WeChat, OA, O2O
 
 * PostgreSQL PITR (Barman)
-  
+
   After a metal host RAID card fatal issue, I build PostgreSQL PITR solution by Barman, making database down-time under endurable time range.
 
 * Linux Container (LXC, LXD)
-  
+
   Every systems (web, async queue, db) are based Linux Container, deployed on metal host, to gain best performance and isolation between every containers. Changed from LXC to LXD lets deploy process more robost.
 
 * Fix performance issues
-  
+
   A majority of process time of asynchronous task is load time, after executed, the process exits. I changed async queue logic, after executed the process do not exit, it just keeps alive unless the count of execution exceeds a threshold as preventing memory leak.
 
 * Elasticsearch, Logstash, Kibana
-  
+
   Use Logstash collects application logs, stores to Elasticsearch and then query on Kibana, also analyze recently request status code or process time.
-  
+
 * Others but very important
-  
+
   Business domain naming, unify coding style, refactor frequently, add tests, make dependency between modules sence, decouple, etc.
 
 ### Training
 
-* Graduated from Udacity Machine Learning (first term)
-  
+* Graduated from Udacity Deep Learning (first term)
+
   Basics of statistics, linear algebra, numpy, pandas, machine learning libraries
 
 ### Contribution
