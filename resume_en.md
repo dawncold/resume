@@ -1,6 +1,6 @@
 ## Personal Information
 
-TianZhen | 186-0028-3016 | i@youth2009.org | QuFuNormalUniversity Sofeware Engineering
+TianZhen | 156-1172-1937 | i@youth2009.org | QuFuNormalUniversity Sofeware Engineering
 
 [Blog](https://youth2009.org/) | [Blog before 2016](https://old.youth2009.org/blog/archives/) | [GitHub](https://github.com/dawncold) | [Linkedin](https://linkedin.com/in/dctz)
 
@@ -12,17 +12,13 @@ Developer, SRE, Ops, DBA of Lijiababy.com.cn
 
 * Lijiababy.com.cn Front-end, Back-end and mobile website
 
-  Tech Keywords: React, React-router, Webpack, Python2, Tornado, PostgreSQL, Redis, jQuery, Gulp, ELK stack
+  Tech Keywords: React, Webpack, Python2, Tornado, Redis
 
   Business Keywords: Reporting, Member, Product, Trade, Promotion, Coupon, Finance, eInvoice, ERP(SAP), Warehouse, Logistics, Notification, After service, Refund, JD, Tmall, WeChat, OA, O2O
 
-* PostgreSQL PITR (Barman)
+* PostgreSQL: SQL skills, backup and recovery (Barman)
 
-  After a metal host RAID card fatal issue, I build PostgreSQL PITR solution by Barman, making database down-time under endurable time range.
-
-* Linux Container (LXC, LXD)
-
-  Every systems (web, async queue, db) are based Linux Container, deployed on metal host, to gain best performance and isolation between every containers. Changed from LXC to LXD lets deploy process more robost.
+* Linux Container: isolate subsystems on metal host
 
 * Fix performance issues
 
@@ -38,9 +34,7 @@ Developer, SRE, Ops, DBA of Lijiababy.com.cn
 
 ### Training
 
-* Graduated from Udacity Deep Learning (first term)
-
-  Basics of statistics, linear algebra, numpy, pandas, machine learning libraries
+Graduated from Udacity Deep Learning (first term): Basics of statistics, linear algebra, numpy, pandas, machine learning libraries
 
 ### Contribution
 * [Veil](https://github.com/honovation/veil): Python web framework，contributor，used by project, report bug, commit fix and feature
