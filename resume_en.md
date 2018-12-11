@@ -7,7 +7,7 @@ TianZhen | 156-1172-1937 | i@youth2009.org | QuFuNormalUniversity Sofeware Engin
 Earliest available entry time: 2019-01-01
 
 ## Experience
-### Honovation (2012.09-Present，6+years)
+### Honovation (2013.09-Present，5+years)
 Developer, SRE, Ops, DBA of Lijiababy.com.cn
 
 * Lijiababy.com.cn Front-end, Back-end and mobile website
