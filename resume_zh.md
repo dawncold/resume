@@ -26,19 +26,19 @@ Lijiababy.com.cn的开发者、网站可用性工程师、有时作为运维和D
 
 * Linux Container：在物理机上隔离不同子系统，由2013年开始使用LXC，去年迁移到了LXD
 
-* 自动化部署：从裸机开始安装应用依赖、加固主机安全配置、安装应用依赖和响应的软件，启动服务。涉及Fabric, LXD
+* 自动化测试：python unittest，selenium+chrome进行web主业务流程测试
 
-* PostgreSQL: 未使用ORM，对数据库操作有一定封装，查询全是完整SQL，对数据库操作熟悉。
+* 自动化部署：从裸机开始自动加固主机安全配置、安装应用依赖和软件，启动服务。涉及Fabric, LXD
+
+* PostgreSQL: 未使用ORM，对数据库操作有一定封装，查询全是完整SQL，对数据库操作熟悉
 
 * PostgreSQL HA: 据库服务器RAID卡坏掉，导致部分数据丢失，是业务中断最长的一次。数据库上次备份时间距离损坏时间间隔较大，无法使用，只能尽量恢复数据。这次惨痛经历过后立刻开始了数据库实时备份的建设，基于Barman、PostgreSQL的PITR技术，现基本可以实现极小的数据丢失概率，而且测试跨数据中心备份效果非常好
 
 * 日志、问题追踪平台（ELK）：应用程序日志归集、查找、分析，在运维时查看最近几小时错误日志，分析4xx，5xx请求比例、处理时间等
 
-* 自动化测试：python unittest，selenium
-
 * 业务领域命名、统一代码风格，积极重构
 
-* 异步任务队列升级、迁移：异步任务在每次执行前加载所有需要依赖的组件后执行完之后退出，大部分时间都消耗在加载依赖上，于是改造成加载依赖后不退出，直到处理足够多任务后再退出，防止有内存溢出。后因原项目不再继续维护，转而使用TaskTiger作为目前的任务队列，目前是该项目的代码贡献者。
+* 异步任务队列升级、迁移：异步任务在每次执行前加载所有需要依赖的组件后执行完之后退出，大部分时间都消耗在加载依赖上，于是改造成加载依赖后不退出，直到处理足够多任务后再退出，防止有内存溢出。后因原项目不再继续维护，转而使用TaskTiger作为目前的任务队列，目前是该项目的代码贡献者
 
 * 与SAP系统集成订单、商品、库存、价格等数据
 
@@ -50,7 +50,7 @@ Lijiababy.com.cn的开发者、网站可用性工程师、有时作为运维和D
 
 * 供应商直送建设：由供应商发货并提供售后，线上平台进入多商户模式，对订单、商品模型修改以适应发展
 
-* 重构商品模型，与ERP商品隔离，使得销售前端可以根据需要定制商品，增加灵活性。
+* 重构商品模型，与ERP商品隔离，使得销售前端可以根据需要定制商品，增加灵活性
 
 * 优惠券系统建设：多渠道投放、多种类型优惠券，促销类型更加丰富
 
@@ -71,9 +71,36 @@ Lijiababy.com.cn的开发者、网站可用性工程师、有时作为运维和D
 * 电子发票建设：线上线下购物自助开票，退换货自动冲红并重开
 
 ### 开源项目贡献
-* [Veil](https://github.com/honovation/veil)：Python web框架，维护者之一，公司项目在使用，提交bug、fix、feature
-* [新广告法敏感词](https://github.com/honovation/new-ad-law-words)：新广告法敏感词库，由其他部门员工整理后发布
-* [Tornado](https://github.com/tornadoweb/tornado)：Python web框架，公司项目在使用，提交bug、fix
-* [BaRMan](https://github.com/2ndquadrant-it/barman)：PostgreSQL数据库备份、恢复工具，公司项目在使用，提交bug、fix、feature
-* [TaskTiger](https://github.com/closeio/tasktiger)：Python async queue，公司项目在使用，提交bug、fix、feature
-* [Pyres](https://github.com/binarydud/pyres)：Python async queue，公司原async queue，提交bug、fix、feature，后来作者不再维护，转为使用TaskTiger
+
+|项目名称|角色|备注|Pull request/issue id|
+|-------|---|---|---------------|
+|[Veil](https://github.com/honovation/veil)|Member|Python web框架|-|
+|[新广告法敏感词](https://github.com/honovation/new-ad-law-words)|Member|新广告法敏感词库，由其他部门员工整理后发布|-|
+|[TaskTiger](https://github.com/closeio/tasktiger)|Contributor|Python task queue|71,72,81,82,88|
+|[Tornado](https://github.com/tornadoweb/tornado)|Contributor|Python web framework and asynchronous networking library|2155|
+|[pylxd](https://github.com/lxc/pylxd)|Contributor|Python module for LXD|307|
+|[BaRMan](https://github.com/2ndquadrant-it/barman)|Issuer|Backup and Recovery Manager for PostgreSQL|174, 184|
+|[Pyres](https://github.com/binarydud/pyres)|Issuer|a resque clone in python|137|
+|[Resweb]()|Forker|Web interface to pyres jobs|[commits](https://github.com/dawncold/resweb/commits/master)|
+|[redis documents]()|-|https://redis.io/topics/streams-intro|1017|
+|[supervisor](https://github.com/Supervisor/supervisor)|-|Supervisor process control system for UNIX|444|
+|[qiniu python sdk](https://github.com/dawncold/python-sdk)|-|Qiniu Resource (Cloud) Storage SDK for Python|319|
+|[Nestable](https://github.com/dbushell/Nestable)|-|Drag & drop hierarchical list with mouse and touch compatibility (jQuery plugin)|113|
+|[suds](https://bitbucket.org/jurko/suds/)|Issuer|python web service library|[issue](https://bitbucket.org/jurko/suds/issues/39/missing-last_sent-and-last_received)|
+
+### 个人项目
+
+|名称|技术|备注|
+|---|---|----|
+|[raspberry_aqi](https://github.com/dawncold/raspberry_aqi)|Python, RaspberryPI, PMS7003, InfluxDB, Chronograf|家庭空气质量检测、展示（web）|
+|[rasp_monitor_lcd](https://github.com/dawncold/rasp_monitor_lcd)|RaspberryPI, PMS7003, LCD|家庭空气质量展示（LCD）|
+|[raspsound](https://github.com/dawncold/raspsound)|requests, tornado, rq, nginx, wechat |微信公众号发送语音，通过树莓派连接音箱播放|
+|[expenditure-application](https://github.com/dawncold/expenditure-application)|Postgresql,tornado,tasktiger,mailgun|家用资金申请、审批|
+|[Scroll-Reverser](https://github.com/dawncold/Scroll-Reverser)|Objective-c|禁止MacOS横向滚动|
+|[家用NAS选购指南](https://youth2009.org/post/build-my-own-nas-hardware/)|Hardware, FreeNAS|-|
+|[飞线修复M950鼠标](https://youth2009.org/post/fix-m950-with-wire-jumper/)|Hardware|-|
+|[修改BIOS关闭Intel ME](https://youth2009.org/post/neutralize-intel-me-on-thinkpad-x220/)|Raspberry pi, GPIO, BIOS|-|
+|[HG8347R光猫改桥接](https://youth2009.org/post/unlock-hg8347r/)|-|-|
+|[优酷路由宝刷OpenWRT](https://youth2009.org/post/flash-lede-or-openwrt-on-chinaunicom-youku-route/)|OpenWRT|-|
+|光纤冷接|Hardware|-|
+|3节点SBC集群|Switch,SBC cluster,k8s|-|
