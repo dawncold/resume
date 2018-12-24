@@ -28,7 +28,8 @@ Pyres在执行完每个任务后进程退出，某些任务量非常多，执行
 
 ## 工作经验
 ### 北京诚创济世信息技术有限公司 (2013年7月至今，5年5个月)
-Lijiababy.com.cn的开发者、网站可用性工程师、有时作为运维和DBA
+
+DevOps at Lijiababy.com.cn
 
 * Lijiababy.com.cn网站前后台PC版：Python、Tornado、PostgreSQL、Redis等
 
