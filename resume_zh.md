@@ -1,6 +1,6 @@
 ## 个人信息
 
-田震 | 156-1172-1937 | i@youth2009.org | 曲阜师范大学 软件工程（本科）
+田震 | 156-1172-1937 | dawncold (微信) | i@youth2009.org | 曲阜师范大学 软件工程（本科）
 
 [博客](https://youth2009.org/) | [2016年之前博客](https://old.youth2009.org/blog/archives/) | [GitHub](https://github.com/dawncold) | [Linkedin](https://linkedin.com/in/dctz)
 
