@@ -1,104 +1,48 @@
 ## 个人信息
 
-田震 | 156-1172-1937 | dawncold (微信) | i@youth2009.org | 曲阜师范大学 软件工程（本科）
+田震 | +86 18600283016 | loooseleaves@gmail.com
 
-[博客](https://youth2009.org/) | [2016年之前博客](https://old.youth2009.org/blog/archives/) | [GitHub](https://github.com/dawncold) | [Linkedin](https://linkedin.com/in/dctz)
+工作经验: 12年以上
 
-入职时间：2019-01-01
-
+最快入职时间：2025 年 8 月 18 日
 
 ## 项目经验
 
-### Lijiababy新零售平台建设
-Lijiababy作为母婴产品零售企业，在线下具有丰富的门店资源，定位中高端会员，致力于提供更高品质的母婴产品和服务。新零售平台主要在以下方面为原业务模式进行优化：
-* 减少会员结账等待时间，减少配送时间。开发快结账功能，会员可自助结账，缓解周末门店结账压力；由统一仓库+第三方物流配送转变为根据收货地址就近门店出库+闪送等方式尽量减少配送时间（未上线）。
-* 减少中间环节，为会员提供品质更高、价格更低的商品。开发供应商直送功能，选择业内优秀产品供应商，通过供应商直接配送给消费者，减少中间环节降低成本。
-* 与天猫、京东、微盟、Amazon等电商平台对接，年中、节日大促一直保持较高增长。
-* 给会员统一的体验，打通线上线下功能，使会员没有隔离感。通过与门店POS系统集成，优惠券线上线下都可使用；线下购买的预付卡可在线上购物（未上线）；为促进店员推广注册，开发店员线上业绩功能；售后可退至门店等。
-* 突破线下门店面积限制，为大体积商品找到去处。通过在门店中放置可触摸式一体机，将占地面积较大的车床椅等品类商品展示给消费者，消费者可在线浏览、下单。
+### **Thoughtworks** | 资深顾问 | 2019.01- 2025.08（6 年 7 个月）
 
-### PostgreSQL数据库备份恢复
-存储设备故障导致文件损坏，原先备份策略为每天备份，对于生产环境无法使用，服务恢复后开始着手其他备份方案。目前使用社区最为推荐的Barman完成数据库备份任务，PITR特性使得可以恢复数据到过去一周任意一个时间点；Streaming replication特性使得跨数据中心只读节点与主节点达到秒级同步。
+1. **全球最大工业资产及车辆拍卖平台** | 7 个月
+   * **基础设施工程师 (5 个月):** 为客户内部应用团队提供可自助管理的工程平台，团队可在几分钟内自助申请基础设施，部署应用。
+     * *技术栈:* 云平台: Azure; 基础设施即代码: Terraform, Crossplane; 调度: Karmada; 安全: HashiCorp Vault, OPA(K8s & Istio), Connaisseur; CI/CD流水线: CircleCI; 服务网络: Istio; 语言: Java (self service API), Go (Crossplane function); 数据库: PostgreSQL
+   * **后端工程师 (2 个月):** 开发产品团队依赖的分类（Taxonomy） API。
+     * *技术栈:* 语言: Python; 框架: FastAPI; 数据库: DynamoDB; CI/CD流水线: CircleCI; 测试: Pactflow (契约测试); 监控: Honeycomb
+2. **某能源企业 (Fortune 50)** | 1 个月
+   * **云解决方案顾问:** 为遗留的企业打印机推荐基于云的打印机管理方案
+     * *技术栈:* Microsoft Universal Print
+3. **某四大会计师事务所** | 5.5 年
+   * **领域专家(海外团队合作) (6 个月):** 与印度团队合作完成约 40 个服务从.NET Framework 或.NET Core 6 迁移到.NET Core 8 并容器化部署到AKS上。
+     * *技术栈:* 语言: C# (.NET Framework, .NET Core); 云平台: Azure SQL Managed Instance, AKS; CI/CD: Azure DevOps
+   * **技术领导 (应用现代化) (1.5 年):** 带领团队成员完成约 40 个服务从.NET Framework迁移到.NET Core 6。
+     * *技术栈:*  语言: C# (.NET Framework, .NET Core); 云平台: Azure SQL Managed Instance; CI/CD: Azure DevOps
+   * **技术领导 (解决生产环境问题) (1 年):** 管理技术债并解决客户报告的线上问题，通过解决线上问题和技术债提升产品整体质量，确保系统稳定性和客户满意。
+   * **全栈工程师 (2.5 年):** 在客户的全球出行管理产品上进行功能开发。涉及Tax, Immigration领域。
+     * *技术栈:* 前端框架: AngularJS, React, Aurelia; 后端: C# (.NET Framework), Autofac, NHibernate; 数据库: SQL Server, EventStore, ElasticSearch; 云平台: Azure SQL Managed Instance, VM, KeyVault, ServiceBus
 
-### 任务队列升级
-Pyres在执行完每个任务后进程退出，某些任务量非常多，执行完退出使得每次执行任务都要重复加载依赖，浪费时间，任务吞吐量上不去。修改执行策略为加载完任务依赖后子进程执行任务然后退出，后续任务都启动子进程执行，使得之前加载的依赖可以与子进程共享，任务处理速度显著提升。因Pyres项目作者不再维护，该feature无法合并，放弃Pyres改用TaskTiger。
+4. **全球某领先车企** | 4 个月   
+   * **API平台顾问:** 指导应用团队发布API到平台，从API平台订阅其他团队维护的API。
+     * *技术栈:* API管理工具: Apigee; 脚本工具: Python
 
-### 运维平台建设
-运维人员需要知道应用程序是否异常、服务响应时间是否有波动等。开发人员根据需要在业务关键节点输出结构化的日志和领域数据，推送至Logstash加工处理，存储在Elasticsearch。运维人员从Kibana中查询、设置运维监控指标。
+5.  **短期咨询项目**
+    *   **技术培训 (4 天):** 参与某电信设备提供商Python培训项目，准备Python最佳实践，问题答疑，修改作业。
+    *   **敏捷咨询 (18 天):** 参与某商业银行敏捷转型咨询项目，讲解 Rest API 含义，成熟度。
 
-## 工作经验
-### 北京诚创济世信息技术有限公司 (2013年7月至今，5年5个月)
+### Honovation | 全栈工程师 | 2012.10 - 2018.12（6 年）
 
-DevOps at Lijiababy.com.cn
+**全栈工程师:** 为国内领先的婴童用品公司构建线上商城系统，打通线上所有销售渠道和线下渠道，并与客户的SAP系统、POS系统集成，商城系统覆盖PC、移动端、微信。   
 
-* Lijiababy.com.cn网站前后台PC版：Python、Tornado、PostgreSQL、Redis等
+*技术栈:* Python 2.7, PostgreSQL, React, JavaScript, HTML/CSS, LXC Container, SAP API, 微信支付, 微信SDK
 
-* 触屏版网站：主要使用React、Webpack、ES6等
+## 认证和教育信息
 
-* 自动化测试：python unittest，selenium+chrome进行web主业务流程测试
+Microsoft认证：Azure开发者助理 | [在线验证](https://learn.microsoft.com/zh-cn/users/zhentian-6703/credentials/b15f12aa38a7c8d0) | 获得时间 2024 年 12 月
 
-* 集成测试：静态依赖检查、循环依赖检查、封装性检查、代码长度、日志格式、html内容、单元测试、文档测试
-
-* 自动化部署：从裸机开始自动加固主机安全配置、安装应用依赖和软件，启动服务。涉及Fabric, LXD
-
-* 触屏版嵌入微信公众号：触屏版网站使用微信js sdk集成各种能力，微信版上线后基本吞没了八成以上流量
-
-* 触屏版嵌入app：触屏版网站集成进一个类似浏览器外壳的app，用类似微信jssdk的方式使用其封装的硬件能力。app上线后销售上升快速，基本和微信版持平
-
-* Linux Container：在物理机上隔离不同子系统，从2013年开始使用LXC，去年迁移到了LXD
-
-* PostgreSQL: 未使用ORM，对数据库操作有一定封装，查询全是完整SQL，对数据库操作熟悉
-
-* Restful接口：app、小程序、线下门店使用的接口
-
-* 图片中敏感词寻找：使用OCR服务解析商品图片，找到可能违反广告法的词语，规避法律风险
-
-* 多渠道推广追踪：类似统计网站的utm追踪方式，可统计不同渠道转化效果
-
-* 优惠券系统：多渠道投放、多种类型优惠券，促销类型更加丰富
-
-* 会员抽奖：消会员积分利器
-
-* 本月特权：根据会员以往消费多少决定本月优惠商品，提高会员购物频次、客单价
-
-* 对接支付宝、微信退款，极大缩短售后退款时间
-
-* 对接SAP系统集成订单、商品、库存、价格等
-
-* 电子发票：线上线下购物自助开票，退换货自动冲红并重开
-
-### 开源项目贡献
-
-|项目名称|角色|备注|Pull request/issue id|
-|-------|---|---|---------------|
-|[Veil](https://github.com/honovation/veil)|Member|Python web框架|-|
-|[新广告法敏感词](https://github.com/honovation/new-ad-law-words)|Member|新广告法敏感词库，由其他部门员工整理后发布|-|
-|[TaskTiger](https://github.com/closeio/tasktiger)|Contributor|Python task queue|71,72,81,82,88|
-|[Tornado](https://github.com/tornadoweb/tornado)|Contributor|Python web framework and asynchronous networking library|2155|
-|[pylxd](https://github.com/lxc/pylxd)|Contributor|Python module for LXD|307|
-|[BaRMan](https://github.com/2ndquadrant-it/barman)|Issuer|Backup and Recovery Manager for PostgreSQL|174, 184|
-|[Pyres](https://github.com/binarydud/pyres)|Issuer|a resque clone in python|137|
-|[Resweb]()|Forker|Web interface to pyres jobs|[commits](https://github.com/dawncold/resweb/commits/master)|
-|[redis documents]()|-|https://redis.io/topics/streams-intro|1017|
-|[supervisor](https://github.com/Supervisor/supervisor)|-|Supervisor process control system for UNIX|444|
-|[qiniu python sdk](https://github.com/dawncold/python-sdk)|-|Qiniu Resource (Cloud) Storage SDK for Python|319|
-|[Nestable](https://github.com/dbushell/Nestable)|-|Drag & drop hierarchical list with mouse and touch compatibility (jQuery plugin)|113|
-|[suds](https://bitbucket.org/jurko/suds/)|Issuer|python web service library|[issue](https://bitbucket.org/jurko/suds/issues/39/missing-last_sent-and-last_received)|
-
-### 个人项目
-
-|名称|技术|备注|
-|---|---|----|
-|[raspberry_aqi](https://github.com/dawncold/raspberry_aqi)|Python, RaspberryPI, PMS7003, InfluxDB, Chronograf|家庭空气质量检测、展示（web）|
-|[rasp_monitor_lcd](https://github.com/dawncold/rasp_monitor_lcd)|RaspberryPI, PMS7003, LCD|家庭空气质量展示（LCD）|
-|[raspsound](https://github.com/dawncold/raspsound)|requests, tornado, rq, nginx, wechat |微信公众号发送语音，通过树莓派连接音箱播放|
-|[expenditure-application](https://github.com/dawncold/expenditure-application)|Postgresql,tornado,tasktiger,mailgun|家用资金申请、审批|
-|[Scroll-Reverser](https://github.com/dawncold/Scroll-Reverser)|Objective-c|禁止MacOS横向滚动|
-|[家用NAS选购指南](https://youth2009.org/post/build-my-own-nas-hardware/)|Hardware, FreeNAS|全服务器级硬件搭建|
-|[飞线修复M950鼠标](https://youth2009.org/post/fix-m950-with-wire-jumper/)|Hardware|稳定运行一年以上|
-|[修改BIOS关闭Intel ME](https://youth2009.org/post/neutralize-intel-me-on-thinkpad-x220/)|Raspberry pi, GPIO, BIOS|胆战心惊编译BIOS|
-|[优酷路由宝刷OpenWRT](https://youth2009.org/post/flash-lede-or-openwrt-on-chinaunicom-youku-route/)|OpenWRT|无线驱动不稳定需编译内核|
-
-## 职业充电
-
-Udacity深度学习（第一学期）毕业：统计、线性代数基础、numpy、pandas、机器学习框架基础
+曲阜师范大学 | 软件工程学士 | 2009 年 – 2013 年
